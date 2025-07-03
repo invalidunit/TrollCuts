@@ -52,6 +52,11 @@ int fd_is_valid(int fd)
 	return fcntl(fd, F_GETFD) != -1 || errno != EBADF;
 }
 
+NSString *commandPath(NSString *command)
+{
+	return [[NSBundle mainBundle].bundlePath stringByAppendingFormat:@"/%@", command];
+}
+
 NSString* getNSStringFromFile(int fd)
 {
 	NSMutableString* ms = [NSMutableString new];
@@ -288,7 +293,7 @@ void kill_backboardd(void)
 
 void kill_cfprefsd(void)
 {
-	killall(@"cfprefsd", YES);
+	spawnRoot(commandPath(@"killall"), @[@"-9", @"cfprefsd"], nil, nil);
 	exit(0);
 }
 

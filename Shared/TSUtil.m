@@ -261,7 +261,7 @@ void enumerateProcessesUsingBlock(void (^enumerator)(pid_t pid, NSString* execut
 	free(info);
 }
 
-void killall(NSString* processName, BOOL softly)
+void killallc(NSString* processName, BOOL softly)
 {
 	enumerateProcessesUsingBlock(^(pid_t pid, NSString* executablePath, BOOL* stop)
 	{

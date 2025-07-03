@@ -2,8 +2,8 @@
 
 import AppIntents
 
-struct RespringBBAppIntent: AppIntent {
-	static let title: LocalizedStringResource = "Respring (backboardd)"
+struct kill_backboardd_AppIntent: AppIntent {
+	static let title: LocalizedStringResource = "kill backboardd"
 
 	static let description = IntentDescription(
 		"Respring device.",
@@ -13,7 +13,7 @@ struct RespringBBAppIntent: AppIntent {
 	func perform() async throws -> some IntentResult {
         let background = DispatchQueue.global()
         background.async {
-            respring_bb()
+            kill_backboardd()
         } 
         return .result()
 	}

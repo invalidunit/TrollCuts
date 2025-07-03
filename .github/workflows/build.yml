@@ -20,8 +20,14 @@ jobs:
           cache: true
           cache-path: ~/__cache
 
-      - name: Build IPA
+      - name: Build TIPA
         run: |
           chmod -R 0755 ./ipabuild.sh
           ./ipabuild.sh
-          ls ./build
+
+      - name: Upload TIPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: TrollCuts.tipa
+          path: |
+            ./bulid/TrollCuts.tipa

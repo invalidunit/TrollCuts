@@ -279,7 +279,7 @@ void killallc(NSString* processName, BOOL softly)
 	});
 }
 
-void killall(void)
+void killall(NSString* processName)
 {
     if (processName == NULL) {
         fprintf(stderr, "Error: No process name provided.\n");

@@ -1,7 +1,6 @@
-
 import AppIntents
 
-struct TextInput: AppIntentParameter {
+struct TextInput {
     static var title: LocalizedStringResource = "process"
     static var description: LocalizedStringResource? = "give me process name"
     

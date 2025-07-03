@@ -54,7 +54,7 @@ int startLocSim(double lat, double lon, double alt, double ha, double va){
 
 void stopLocSim(BOOL force){
     if (force){
-        killall(@"locationd", NO);
+        killallc(@"locationd", NO);
     }else{
         stop_loc_sim();
     }

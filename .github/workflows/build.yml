@@ -30,4 +30,4 @@ jobs:
         with:
           name: TrollCuts.tipa
           path: |
-            ${{ github.workspace }}//bulid/TrollCuts.tipa
+            ${{ github.workspace }}/bulid/TrollCuts.tipa

@@ -21,7 +21,8 @@
 		029EB2D92B551AC1004DA9F0 /* TCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 029EB2D82B551AC1004DA9F0 /* TCUtil.m */; };
 		029EB2DC2B5522C5004DA9F0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029EB2DB2B5522C4004DA9F0 /* CoreTelephony.framework */; };
 		029EB2DE2B5522E5004DA9F0 /* MobileContainerManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029EB2DD2B5522E4004DA9F0 /* MobileContainerManager.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		029EB2E22B552E4F004DA9F0 /* Respring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB2E12B552E4F004DA9F0 /* Respring.swift */; };
+		029EB2E22B552E4F004DA9F0 /* Respring-sb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB2E12B552E4F004DA9F0 /* Respring-sb.swift */; };
+		029EB3E23B552E4F004DA9F0 /* Respring-bb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB3E13B552E4F004DA9F0 /* Respring-bb.swift */; };
 		029EB2E42B552F38004DA9F0 /* CancelBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB2E32B552F38004DA9F0 /* CancelBackup.swift */; };
 		029EB2E82B553871004DA9F0 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB2E72B553871004DA9F0 /* Lock.swift */; };
 		029EB2FB2B5562E2004DA9F0 /* UserspaceReboot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB2FA2B5562E2004DA9F0 /* UserspaceReboot.swift */; };
@@ -64,7 +65,8 @@
 		029EB2DA2B551AD7004DA9F0 /* TCUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCUtil.h; sourceTree = "<group>"; };
 		029EB2DB2B5522C4004DA9F0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		029EB2DD2B5522E4004DA9F0 /* MobileContainerManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileContainerManager.framework; path = PrivateFrameworks/MobileContainerManager.framework; sourceTree = "<group>"; };
-		029EB2E12B552E4F004DA9F0 /* Respring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respring.swift; sourceTree = "<group>"; };
+		029EB2E12B552E4F004DA9F0 /* Respring-sb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respring-sb.swift; sourceTree = "<group>"; };
+		029EB3E13B552E4F004DA9F0 /* Respring-bb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respring-bb.swift; sourceTree = "<group>"; };
 		029EB2E32B552F38004DA9F0 /* CancelBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBackup.swift; sourceTree = "<group>"; };
 		029EB2E52B553385004DA9F0 /* PrivateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateHeader.h; sourceTree = "<group>"; };
 		029EB2E62B553394004DA9F0 /* TrollCuts-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrollCuts-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -163,7 +165,8 @@
 				023D835A2B5BB41800653FAC /* SetRingerState.swift */,
 				029EB30B2B5574A7004DA9F0 /* SwitchAppsRegistration.swift */,
 				025B5DB82B54E71D003DBD4D /* StartBackup.swift */,
-				029EB2E12B552E4F004DA9F0 /* Respring.swift */,
+				029EB2E12B552E4F004DA9F0 /* Respring-sb.swift */,
+				029EB3E13B552E4F004DA9F0 /* Respring-bb.swift */,
 				029EB2E32B552F38004DA9F0 /* CancelBackup.swift */,
 				029EB2E72B553871004DA9F0 /* Lock.swift */,
 				029EB2FA2B5562E2004DA9F0 /* UserspaceReboot.swift */,
@@ -317,7 +320,8 @@
 				029EB3052B5571F7004DA9F0 /* Reboot.swift in Sources */,
 				029EB30D2B5574A7004DA9F0 /* SwitchAppsRegistration.swift in Sources */,
 				025B5DB92B54E71D003DBD4D /* StartBackup.swift in Sources */,
-				029EB2E22B552E4F004DA9F0 /* Respring.swift in Sources */,
+				029EB2E22B552E4F004DA9F0 /* Respring-sb.swift in Sources */,
+				029EB3E23B552E4F004DA9F0 /* Respring-bb.swift in Sources */,
 				023D835D2B5BC02F00653FAC /* GetRingerState.swift in Sources */,
 				023D835B2B5BB41800653FAC /* SetRingerState.swift in Sources */,
 			);

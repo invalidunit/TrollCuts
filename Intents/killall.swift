@@ -1,7 +1,7 @@
 
 import AppIntents
 
-struct TextInput: AppIntentParameter {
+@Sendable struct TextInput: AppIntentParameter {
     static var title: LocalizedStringResource = "process"
     static var description: LocalizedStringResource? = "give me process name"
     
@@ -17,15 +17,16 @@ struct killall_AppIntent: AppIntent {
     )
     
     @Parameter(title: "process")
-    var inputText: TextInput?
+    var inputText: String?
     
     func perform() async throws -> some IntentResult {
-	if let inputText = self.inputText {
+        if let inputText = self.inputText {
             let background = DispatchQueue.global()
             background.async {
-                killall(inputText.text)
+                killall(inputText)
             }
             return .result()
         }
+        return .result()
     }
 }

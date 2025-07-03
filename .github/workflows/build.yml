@@ -24,10 +24,11 @@ jobs:
         run: |
           chmod -R 0755 ./ipabuild.sh
           ./ipabuild.sh
+          readlink -f ./build
 
       - name: Upload TIPA
         uses: actions/upload-artifact@v4
         with:
           name: TrollCuts.tipa
           path: |
-            ${{ github.workspace }}/bulid/TrollCuts.tipa
+            ${{ github.workspace }}/build/TrollCuts.tipa

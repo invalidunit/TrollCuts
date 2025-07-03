@@ -279,22 +279,16 @@ void killall(NSString* processName, BOOL softly)
 	});
 }
 
-void kill_SpringBoard(void)
+void killall(void)
 {
-	killall(@"SpringBoard", YES);
-	exit(0);
-}
-
-void kill_backboardd(void)
-{
-	killall(@"backboardd", YES);
-	exit(0);
-}
-
-void kill_cfprefsd(void)
-{
-	spawnRoot(commandPath(@"killall"), @[@"-9", @"cfprefsd"], nil, nil);
-	exit(0);
+    if (processName == NULL) {
+        fprintf(stderr, "Error: No process name provided.\n");
+        exit(1);
+    }
+    NSString* processNameStr = [NSString stringWithUTF8String:processName];
+    NSArray* args = [NSArray arrayWithObjects:@"-9", processNameStr, nil];
+    spawnRoot(commandPath(@"killall"), args, nil, nil);
+    exit(0);
 }
 
 void github_fetchLatestVersion(NSString* repo, void (^completionHandler)(NSString* latestVersion))

@@ -274,15 +274,21 @@ void killall(NSString* processName, BOOL softly)
 	});
 }
 
-void respring_sb(void)
+void kill_SpringBoard(void)
 {
 	killall(@"SpringBoard", YES);
 	exit(0);
 }
 
-void respring_bb(void)
+void kill_backboardd(void)
 {
 	killall(@"backboardd", YES);
+	exit(0);
+}
+
+void kill_cfprefsd(void)
+{
+	killall(@"cfprefsd", YES);
 	exit(0);
 }
 

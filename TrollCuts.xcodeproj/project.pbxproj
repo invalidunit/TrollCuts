@@ -325,7 +325,7 @@
 				025B5DB92B54E71D003DBD4D /* StartBackup.swift in Sources */,
 				029EB2E22B552E4F004DA9F0 /* kill_SpringBoard.swift in Sources */,
 				029EB3E23B552E4F004DA9F0 /* kill_backboardd.swift in Sources */,
-				029EB4E23B552E4F004DA9F0 /* kill_cfprefsd.swift in Sources */,
+				029EB4E24B552E4F004DA9F0 /* kill_cfprefsd.swift in Sources */,
 				023D835D2B5BC02F00653FAC /* GetRingerState.swift in Sources */,
 				023D835B2B5BB41800653FAC /* SetRingerState.swift in Sources */,
 			);

@@ -2,7 +2,7 @@
 
 import AppIntents
 
-struct RespringAppIntent: AppIntent {
+struct RespringSBAppIntent: AppIntent {
 	static let title: LocalizedStringResource = "Respring (SpringBoard)"
 
 	static let description = IntentDescription(

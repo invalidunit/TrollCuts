@@ -13,7 +13,7 @@ struct RespringAppIntent: AppIntent {
 	func perform() async throws -> some IntentResult {
         let background = DispatchQueue.global()
         background.async {
-            respring-bb()
+            respring_bb()
         } 
         return .result()
 	}

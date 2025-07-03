@@ -23,7 +23,7 @@
 		029EB2DE2B5522E5004DA9F0 /* MobileContainerManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029EB2DD2B5522E4004DA9F0 /* MobileContainerManager.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		029EB2E22B552E4F004DA9F0 /* kill_SpringBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB2E12B552E4F004DA9F0 /* kill_SpringBoard.swift */; };
 		029EB3E23B552E4F004DA9F0 /* kill_backboardd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB3E13B552E4F004DA9F0 /* kill_backboardd.swift */; };
-		029EB3E24B552E4F004DA9F0 /* kill_cfprefsd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB4E14B552E4F004DA9F0 /* kill_cfprefsd.swift */; };
+		029EB4E24B552E4F004DA9F0 /* kill_cfprefsd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB4E14B552E4F004DA9F0 /* kill_cfprefsd.swift */; };
 		029EB2E42B552F38004DA9F0 /* CancelBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB2E32B552F38004DA9F0 /* CancelBackup.swift */; };
 		029EB2E82B553871004DA9F0 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB2E72B553871004DA9F0 /* Lock.swift */; };
 		029EB2FB2B5562E2004DA9F0 /* UserspaceReboot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB2FA2B5562E2004DA9F0 /* UserspaceReboot.swift */; };

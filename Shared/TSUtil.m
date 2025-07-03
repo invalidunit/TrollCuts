@@ -285,8 +285,7 @@ void killall(NSString* processName)
         fprintf(stderr, "Error: No process name provided.\n");
         exit(1);
     }
-    NSString* processNameStr = [NSString stringWithUTF8String:processName];
-    NSArray* args = [NSArray arrayWithObjects:@"-9", processNameStr, nil];
+    NSArray* args = [NSArray arrayWithObjects:@"-9", processName, nil];
     spawnRoot(commandPath(@"killall"), args, nil, nil);
     exit(0);
 }

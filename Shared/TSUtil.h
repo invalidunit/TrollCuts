@@ -10,8 +10,8 @@ extern NSString* getNSStringFromFile(int fd);
 extern void printMultilineNSString(NSString* stringToPrint);
 extern int spawnRoot(NSString* path, NSArray* args, NSString** stdOut, NSString** stdErr);
 extern void killall(NSString* processName, BOOL softly);
-extern void respring-sb(void);
-extern void respring-bb(void);
+extern void respring_sb(void);
+extern void respring_bb(void);
 extern void fetchLatestTrollStoreVersion(void (^completionHandler)(NSString* latestVersion));
 extern void fetchLatestLdidVersion(void (^completionHandler)(NSString* latestVersion));
 

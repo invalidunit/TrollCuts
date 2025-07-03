@@ -6,7 +6,7 @@ struct kill_backboardd_AppIntent: AppIntent {
 	static let title: LocalizedStringResource = "kill backboardd"
 
 	static let description = IntentDescription(
-		"Respring device.",
+		"kill backboardd",
 		categoryName: "Device"
 	)
 

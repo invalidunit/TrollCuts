@@ -2,18 +2,18 @@
 
 import AppIntents
 
-struct RespringSBAppIntent: AppIntent {
-	static let title: LocalizedStringResource = "Respring (SpringBoard)"
+struct kill_SpringBoard_AppIntent: AppIntent {
+	static let title: LocalizedStringResource = "kill SpringBoard"
 
 	static let description = IntentDescription(
-		"Respring device.",
+		"kill SpringBoard",
 		categoryName: "Device"
 	)
 
 	func perform() async throws -> some IntentResult {
         let background = DispatchQueue.global()
         background.async {
-            respring_sb()
+            kill_SpringBoard()
         } 
         return .result()
 	}

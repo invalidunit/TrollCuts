@@ -2,7 +2,7 @@
 
 import AppIntents
 
-struct RespringAppIntent: AppIntent {
+struct RespringBBAppIntent: AppIntent {
 	static let title: LocalizedStringResource = "Respring (backboardd)"
 
 	static let description = IntentDescription(
